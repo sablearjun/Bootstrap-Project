@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css" > -->
+	<title>Home</title>
+	<link rel="shortcut icon" href="images/nba.ico" />	
+	</head>
+	<body>
+	<!-- <script src="js/jquery-2.2.4.js"></script> -->
+	<!-- <script src="js/bootstrap.min.js" ></script> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/mycss.css">
+	<style>
+	.zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+	</style>	
+<!------------------------------------------------ Navbar ------------------------------------------------------------>
+		
+			<nav class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" role="navigation">
+			<div class="container">
+			<div class="navbar-header">
+			<a class="navbar-brand" href="https://offersbysablearjun.wordpress.com"><b>Arjun Sable</b></a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+			<span class="sr-only">Toggle Navigation"</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav">
+				<li><a href="#home" data-="tab" class="active zoom">Home</a></li>
+				<li><a href="#shopping" data-toggle="tab" class="zoom" >Shopping</a></li>
+				<li><a href="#gallery" datatoggle-toggle="tab" class="zoom">Gallery</a></li>
+				<li><a href="#faq" data-toggle="tab" class="zoom">FAQ</a></li>
+				<li><a href="#contact" data-toggle="tab" class="zoom">Contact</a></li>
+				<li><a href="#about" data-toggle="tab" class="zoom">About</a></li>
+				<li><a href="" data-toggle="modal" data-target="#login">Login</a></li>
+				</ul>
+				<a href="" class="btn btn-success navbar-btn navbar-right" data-target="#modal2" data-toggle="modal">Enroll Now</a>
+			</div></div></nav>
+
+<!---------------------------------------------- Modal 1 Receive Daily Offers--------------------------------------------------------------->
+
+		<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+    <!-- Modal content-->
+		<div class="modal-content">
+		<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>On Mobile Phone Click On This Link To Receive Daily Offers</b></h4>
+		</div>
+		<div class="modal-body">
+        <center><a href="https://api.whatsapp.com/send?phone=917021623036text=Offers"><img src="images/wa.jpg"></a></center>
+		</div>
+		<div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Okay</button>
+		</div>
+		</div>
+		</div>
+		</div>
+
+<!---------------------------------------------- Modal Login--------------------------------------------------------------->
+
+		<div id="login" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+    <!-- Modal content-->
+		<div class="modal-content">
+		<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>Login</b></h4>
+		</div>
+		<div class="modal-body">
+        <form class="form-inline">
+		<div class="form-group">
+		<input type="text" class="form-control" id="username" placeholder="Enter User Name"/></div>
+		<div class="form-group">
+		<input type="password" class="form-control" id="password" placeholder="Enter Password"/>
+		</div>
+		<input type="button" class="form-control btn btn-success" value="Submit"/><br><br>
+		</div>	
+		</form>
+		<div class="modal-footer">
+		<a href="" data-dismiss="modal" data-toggle="modal" data-target="#signup">Sign Up</a>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+		</div>
+		</div>
+		</div>
+		</div>
+<!---------------------------------------------- Modal Signup--------------------------------------------------------------->
+
+		<div id="signup" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+    <!-- Modal content-->
+		<div class="modal-content">
+		<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>Signup</b></h4>
+		</div>
+		<div class="modal-body">
+        <form class="form-vertical text-center">
+		<div class="form-group">
+		<input type="text" class="form-control" id="fname" placeholder="Enter First Name"/></div>
+		<div class="form-group">
+		<input type="text" class="form-control" id="lname" placeholder="Enter Last Name"/></div>
+		<div class="form-group">
+		<input type="email" class="form-control" id="email" placeholder="Enter Email ID"/></div>
+		<div class="form-group">
+		<input type="password" class="form-control" id="password" placeholder="Enter Password"/>
+		</div>
+		<input type="button" class="form-control btn btn-success" value="Sign Up"/><br><br>
+		</div>	
+		</form>
+		<div class="modal-footer">
+		<a href="" data-dismiss="modal" data-toggle="modal" data-target="#login">Sign In</a>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+		</div>
+		</div>
+		</div>
+		</div>
+<!---------------------------------------------- Modal 2 Enroll Now--------------------------------------------------------------->
+
+	<div class="modal" id="modal2">
+	<div class="modal-dialog">
+	<div class="modal-content">
+	
+	<div class="modal-header">
+	<Button type="button" class="close" data-dismiss="modal">&times;</Button>
+	<h3 class="modal-title">Sign Up Form</h3></div>
+	
+	<div class="modal-body">
+	<form class="form-horizontal">
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="name">Name</label>
+	<div class="col-sm-6">
+	<input type="email" class="form-control" id="name" placeholder="Enter Your Name">
+	</div></div>
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="email">Email</label>
+	<div class="col-sm-6">
+	<input type="email" class="form-control" id="email" placeholder="Enter Email ID">
+	</div></div>
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="pwd">Password</label>
+	<div class="col-sm-6">
+	<input type="password" class="form-control" id="pwd" placeholder="Enter Password">
+	</div></div>
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="msg">Message</label>
+	<div class="col-sm-6">
+	<textarea class="form-control" rows="8" id="msg" placeholder="type your message here..."></textarea>
+	</div></div>
+	</form>
+	</div>
+	<div class="modal-footer">
+	<Button type="button" class="btn btn-info" data-dismiss="modal">Submit</Button>
+	</div>
+	</div>
+	
+	</div></div>
+  
+<!--------------------------------------------- Jumbotron------------------------------------------------------------>
+  
+  <!-- <div class="container"> -->
+		<div class="jumbotron text-center">
+		<h2><b><span style="color:#F39C12">Best</span> Recharge, Bill Pay & Shopping Deals</b></h2> 
+		<h5><span style="color:#F39C12">Money</span> Saved Is Money Earned</h5>
+		<div class="btn-group">
+		<button class="btn btn-success" data-toggle="modal" data-target="#myModal"><font color="white">Receive Daily Offers</font></a></button>
+		<button class="btn">Contact Me</button>
+		</div>
+		</div>
+		<!-- </div> -->
+	
+<!------------------------------------------------------- Tab Content	 -------------------------------------------------->	
+<!--------------------------------------------- Testimonials ----------------------------------------------------------------->
+      <div class="tab-content">
+		<div id="home" class="tab-pane fade in active">
+		<div class="container">
+		<center><h1>Testimonials<br>
+		<small>This is what our customers are saying about us.</small></h1></center>
+		<br>
+        <!--First column-->
+        <div class="col-sm-6 col-md-4 col-lg-4 col-lg-offset-0">
+        <blockquote><p>Best Website I have ever Seen. Arjun Sable sends daily offers over Whatsapp. The best offers I receives Daily. Thank You</p> 
+		<footer>Arjun Sable</footer></blockquote>
+        </div>
+        <!--/.First column-->
+		<!--Second column-->
+        <div class="col-sm-6 col-md-4 col-lg-4 col-lg-offset-0">
+        <blockquote><p>Best Website I have ever Seen. Arjun Sable sends daily offers over Whatsapp. The best offers I receives Daily. Thank You</p> 
+		<footer>Arjun Sable</footer></blockquote>
+        </div>
+        <!--/.Second column-->
+		<!--Third column-->
+        <div class="col-sm-6 col-md-4 col-lg-4 col-lg-offset-0">
+        <blockquote><p>Best Website I have ever Seen. Arjun Sable sends daily offers over Whatsapp. The best offers I receives Daily. Thank You</p> 
+		<footer>Arjun Sable</footer></blockquote>
+        </div>
+        <!--/Third column-->		   
+		</div>
+		</div>
+		
+		
+<!------------------------------------------------------- Tab Content	 -------------------------------------------------->
+<div id="shopping" class="tab-pane fade">
+
+<div class="container">
+<center>
+	<h1>Top Shopping Websites<br>
+	<small>Offers We Provide For</small></h1></center>
+	<div class="row">
+	<div class="col-sm-6 col-md-4 col-lg-12 col-xs-offset-3 col-xs-6 col-sm-offset-0">
+	<div class="row">
+	<hr>
+	<div class="col-lg-8">		
+	<h3>Flipkart</h3>
+	<p>Flipkart is an electronic commerce company headquartered in Bengaluru, India. It was founded in October 2007 by Sachin Bansal and Binny Bansal.
+	</p></div><br><br>
+	<div class="col-lg-2 col-lg-offset-2">
+	<image src="images/flipkart.png">
+	</div>
+	</div></div>
+	
+	<div class="col-sm-6 col-md-4 col-lg-12 col-xs-offset-3 col-xs-6 col-sm-offset-0">
+	<div class="row">
+	<hr>
+	<div class="col-lg-8">		
+	<h3>Amazon</h3>
+	<p>Amazon.com, Inc., doing business as Amazon, is an American electronic commerce and cloud computing company based in Seattle, Washington that was founded by Jeff Bezos on July 5, 1994.
+	</p></div>
+	<div class="col-lg-2 col-lg-offset-2">
+	<image src="images/amazon.png">
+	</div>
+	</div></div>
+
+	<div class="col-sm-6 col-md-4 col-lg-12 col-xs-offset-3 col-xs-6 col-sm-offset-0">
+	<div class="row">
+	<hr>
+	<div class="col-lg-8">		
+	<h3>Paytm</h3>
+	<p>Paytm is an Indian e-payments and e-commerce brand based out of Delhi NCR, India. Launched in August 2010, it is a consumer brand of parent company One97 Communications. The name is an acronym for "Payment Through Mobile".
+	</p></div><br><br>
+	<div class="col-lg-2 col-lg-offset-2">
+	<image src="images/paytm.png">
+	</div>
+	</div></div>
+	
+	<div class="col-sm-6 col-md-4 col-lg-12 col-xs-offset-3 col-xs-6 col-sm-offset-0">
+	<div class="row">
+	<hr>
+	<div class="col-lg-8">		
+	<h3>Freecharge</h3>
+	<p>FreeCharge is an e-commerce website headquartered in Gurgaon. It provides online facility to recharge any prepaid mobile phone, postpaid mobile, DTH & Data Cards in India
+	</p></div><br><br>
+	<div class="col-lg-2 col-lg-offset-2">
+	<image src="images/freecharge.png">
+	</div>
+	</div></div>
+	
+	<div class="col-sm-6 col-md-4 col-lg-12 col-xs-offset-3 col-xs-6 col-sm-offset-0">
+	<div class="row">
+	<hr>
+	<div class="col-lg-4">
+	<div class="panel panel-primary" align="center">
+	<div class="panel-heading"><span class="glyphicon glyphicon-qrcode"></span></div>
+	<div class="panel-body">Scan For More Info</div>
+	<div class="panel-footer">offersbysablearjun.wordpress.com</div>
+	</div></div>
+	<div class="col-lg-4">
+	<div class="panel panel-success" align="center">
+	<div class="panel-heading"><span class="glyphicon glyphicon-search"></span></div>
+	<div class="panel-body">Search us on Google</div>
+	<div class="panel-footer">Offers By SableArjun</div>
+	</div></div>
+	<div class="col-lg-4">
+	<div class="panel panel-info" align="center">
+	<div class="panel-heading"><span class="glyphicon glyphicon-thumbs-up"></span></div>
+	<div class="panel-body">Like us on Facebook</div>
+	<div class="panel-footer">offersbysablearjun</div>
+	</div></div>
+	</div></div>
+	</div>
+	<hr>
+	
+	<div class="jumbotron" align="center">
+	<h4>Subscribe</h4>
+	<h6>Enter your name & email id below</h6><br>
+	<form class="form-inline">
+	<div class="form-group">
+	<input type="text" class="form-control" id="name" placeholder="Enter Name"/></div>
+	<div class="form-group">
+	<input type="email" class="form-control" id="email" placeholder="Enter Email ID"/>
+	</div>
+	<input type="button" class="form-control btn btn-danger" value="Subscribe"/><br><br>
+	&bull;&bull;We Promise We Will Never Spam You&bull;&bull;
+	</div>	
+	</form>
+	</div>
+	</div>
+<!------------------------------------------------------- Tab Content	 -------------------------------------------------->
+<div id="gallery" class="tab-pane fade">
+<div class ="container">
+<!--------------------------------------------- Carousel ------------------------------------------------------------>
+  
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+		
+		<div class="item active">
+		<img src="images/f1.jpg" alt="Flipkart" width="100%">
+		<div class="carousel-caption">Flipkart</div>
+		
+		</div>
+		<div class="item">
+		<img src="images/f2.jpg" alt="Amazon" width="100%">
+		<div class="carousel-caption">Amazon</div>
+		</div>
+		<div class="item">
+		<img src="images/f3.jpg" alt="Advertise"width="100%">
+		<div class="carousel-caption">Advertise</div>
+		</div>
+		</div>
+
+		  <!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		<span class="sr-only">Next</span>
+		</a>
+		</div>
+  
+</div>
+</div>
+
+<!------------------------------------------------------- About	 -------------------------------------------------->
+<div id="about" class="tab-pane fade">
+<div class ="container">
+<center><h1>Arjun Sable</h1></center>
+<div class="graph-outline">
+<object data="resume.pdf" type="application/pdf" width="100%" height="800px"> 
+  <p>It appears you don't have a PDF plugin for this browser.
+   No biggie... you can <a href="resume.pdf">click here to
+  download the PDF file.</a></p>  
+ </object>
+ </div>
+	</div>
+</div>
+<!------------------------------------------------------- Tab Content	 -------------------------------------------------->
+<div id="faq" class="tab-pane fade">
+<div class ="container">
+<!--------------------------------------------------------FAQ Panel------------------------>
+<ul class="nav nav-tabs nav-justified">
+<li class="active">
+<a href="#faq1" data-toggle="tab">FAQ 1</a>
+</li>
+<li>
+<a href="#faq2" data-toggle="tab">FAQ 2</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active" id="faq1">
+
+<div class="panel-group" id="main">
+<div class="panel panel-info">
+<a href="#first" data-toggle="collapse" data-parent="#main">
+<div class="panel-heading">
+<h5>What is offer?</h5><br>
+</div>
+</a>
+<div class="panel-collapse collapse" id="first">
+<div class="panel-body">
+<p>Offers are the best ways to shop online with best price.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-info">
+<a href="#second" data-toggle="collapse" data-parent="#main">
+<div class="panel-heading">
+<h5>Second</h5>
+</div>
+</a>
+<div class="panel-collapse collapse" id="second">
+<div class="panel-body">
+<p>Offers are the best ways to shop online with best price.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-content">
+<div class="tab-pane active" id="faq2">
+</div>
+</div>
+</div>
+</div>
+</div>
+<!------------------------------------------------------- Tab Content	 -------------------------------------------------->
+
+<div id="contact" class="tab-pane fade">
+<div class ="container">
+<center><h2><b>Contact Form</b></h2>
+<h3><small>If You Have Any Queries Feel Free To Disturb Me</small><h3>
+	<form class="form-horizontal">
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="name">Name</label>
+	<div class="col-sm-6">
+	<input type="email" class="form-control" id="name" placeholder="Enter Your Name">
+	</div></div>
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="email">Email</label>
+	<div class="col-sm-6">
+	<input type="email" class="form-control" id="email" placeholder="Enter Email ID">
+	</div></div>
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="website">Website</label>
+	<div class="col-sm-6">
+	<input type="text" class="form-control" id="pwd" placeholder="Website">
+	</div></div>
+	<div class="form-group">
+	<label class="control-label col-sm-2" for="msg">Message</label>
+	<div class="col-sm-6">
+	<textarea class="form-control" rows="8" id="msg" placeholder="type your message here..."></textarea>
+	</div></div>
+	<div class="col-sm-4 col-sm-offset-2">
+	<a href="#" class="btn btn-info btn-lg">
+	<span class="glyphicon glyphicon-envelope"></span>  Send</a></center>
+	<br><br>
+	</div>
+	</form>
+
+</div>
+</div>
+
+
+
+
+<!------------------------------------------------------- Tab Content	 -------------------------------------------------->
+</div>
+  <!-----------------------------------------------------Footer--------------------------------------------------------------->
+		<footer class="page-footer font-small unique-color-dark pt-0">
+          <div style="background-color: #37474F;">
+              <div class="container">
+                  <!--Grid row-->
+                  <div class="row py-4 d-flex align-items-center">
+      
+                      <!--Grid column-->
+                      <div class="col-md-6 col-lg-12 text-center text-md-left mb-4 mb-md-0">
+                          <h6><font color="white">Get connected with us on social networks!</h6>
+						  <h6>© 2018 Copyright:Arjun Sable</font></h6>
+			</div>
+			</div>
+			</div> 
+			</div>
+		</footer>				
+</body>
+</html>
